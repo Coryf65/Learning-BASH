@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# this works in a streaming fashion, no exit codes from grep though
+
 i=0
 while read -r word; do
     echo "$word"
