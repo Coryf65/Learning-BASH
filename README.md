@@ -1,10 +1,9 @@
-# BASH course
+# Learning BASH
 
-by [Dave Eddy](https://www.youtube.com/watch?v=Sx9zG7wa4FA)
+Course by [Dave Eddy](https://course.ysap.sh/)
 
-## Intro
+Learn the Bash Shell and master beginner all the way up to advanced Bash scripting techniques.
 
-- Terminal -> the program works as a REPL runs an instance of BASH
-- Shell -> 
-- Commands -> (built-in's /bin) 
+Thanks Dave Eddy for providing such a great resource to the community :)
 
+These are my demo scripts for following along!
