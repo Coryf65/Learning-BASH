@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-# example of a simple library of code
+# swapped parens from curlys
 greet() {
-    echo "hello $1"
+    name=$1
+    echo "hello $name"
 }
 
 goodbye() {
-    echo "goodbye $1"
+    name=$1
+    echo "goodbye $name"
 }
 
 # a main sort of syntax, only called if ran directly
