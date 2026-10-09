@@ -5,17 +5,17 @@ shebang="#!/usr/bin/env bash
 
 "
 # $1 - the first arg
-if [[ -n $1 ]]; then
-    filename=$1
+if [[ -n $* ]]; then
+    filename=$*
 else
     read -p 'enter the new bash filename: ' filename
 fi
 
+# replace any slash "/" with a hyphen "-"
+filename=${filename// /-}
+
 # add file extension for me!
 filename="$filename.sh"
-
-# replace any slash "/" with a hyphen "-"
-filename=${filename////-}
 
 echo "creating file '$filename'"
 
