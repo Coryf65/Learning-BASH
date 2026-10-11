@@ -7,7 +7,7 @@ array=()
 # reading a file into an array
 while read -r line; do
     array+=("$line")
-done < data.txt
+done < ../files/data.txt
 
 # print array
 printf '<%s>\n' "${array[@]}"
