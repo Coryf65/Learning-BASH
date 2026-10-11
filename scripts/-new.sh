@@ -17,10 +17,14 @@ filename=${filename// /-}
 # add file extension for me!
 filename="$filename.sh"
 
-echo "creating file '$filename'"
-
-# add the base bash shebang text
-echo "$shebang" > $filename
+# check if it exists
+if [[ -f "$filename" ]]; then
+    echo "file already exists."
+else
+    echo "creating file '$filename'"
+    # add the base bash shebang text
+    echo "$shebang" > $filename
+fi
 
 # chmod that very same file to be +x
 chmod +x $filename
