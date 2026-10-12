@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -t 1 ]]; then
+    echo stdout is a tty
+else
+    echo stdout is not a tty
+fi
+
+# 
